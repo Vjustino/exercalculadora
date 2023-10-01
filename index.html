@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>:: AULA 12 ♥ ::</title>
+</head>
+
+<body>
+    
+    <header>
+    
+        
+        <div class="logo fonte">CAlculadora</div>
+        <nav class="fonte">
+            <ul>
+                <li>Soma</li>
+                <li>Subtração</li>
+                <li>Multiplicação</li>
+                <li>Divisão </li>
+            </ul>
+            
+        </nav>
+       
+    </header>
+    <img src="img/abstrato.jpg" height="100%" width="100%">
+    <audio controls>
+        <source src="img/Flying - https___drive.google.com_file_d_1JmJrz8nQOp7uSM7O3BLJoJzVqrBy6Wgh_view.mp3" type=" audio/mp3">
+    </audio>
+
+    <main>
+        <h1 class="fonte_h1">
+             javascript </h1>
+        <div id="div01" class="content">
+            <input type="number" name="txt01" id="txt01" class="txt">
+            <input type="number" name="txt02" id="txt02" class="txt">
+            <input type="button" value="+" id="btnSomar" class="txt">
+            <input type="button" value="-" id="btnsubtracao" class="txt">
+            <input type="button" value="*" id="btnmultiplicar" class="txt">
+            <input type="button" value="/" id="btndivisao" class="txt">
+            <button id="btnLimpar" class="txt"> C </button>
+            <div id="resultado">
+              <b>Resultado</b>  
+            </div>
+        </div>
+    </main>
+
+
+    <footer>Elas na Tech 2023 ♥</footer>
+
+
+    <script>
+        var btnSomar = document.getElementById('btnSomar');
+        btnSomar.addEventListener('click', somar);
+
+        function somar() {
+            var c1 = document.getElementById('txt01');
+            var c2 = document.getElementById('txt02');
+            var result = document.getElementById('resultado');
+
+            
+            var num1 = parseFloat(c1.value);
+            var num2 = parseFloat(c2.value);
+
+            var resultado = num1 + num2;
+            result.innerText = "A soma é: " + resultado;
+
+        }
+
+        var btnsubtracao = document.getElementById('btnsubtracao');
+        btnsubtracao.addEventListener('click', subtracao);
+
+        function subtracao() {
+            var c1 = document.getElementById('txt01');
+            var c2 = document.getElementById('txt02');
+            var result = document.getElementById('resultado');
+
+            
+            var num1 = parseFloat(c1.value);
+            var num2 = parseFloat(c2.value);
+
+            var resultado = num1 - num2;
+            result.innerText = "A subtração é: " + resultado;
+
+        }
+
+        var btnmultiplicar = document.getElementById('btnmultiplicar');
+        btnmultiplicar.addEventListener('click', multiplicar);
+
+        function multiplicar() {
+            var c1 = document.getElementById('txt01');
+            var c2 = document.getElementById('txt02');
+            var result = document.getElementById('resultado');
+
+            
+            var num1 = parseFloat(c1.value);
+            var num2 = parseFloat(c2.value);
+
+            var resultado = num1 * num2;
+            result.innerText = "A multiplicação é: " + resultado;
+
+        }
+
+        var btndivisao = document.getElementById('btndivisao');
+        btndivisao.addEventListener('click', divisao);
+
+        function divisao() {
+            var c1 = document.getElementById('txt01');
+            var c2 = document.getElementById('txt02');
+            var result = document.getElementById('resultado');
+
+            
+            var num1 = parseFloat(c1.value);
+            var num2 = parseFloat(c2.value);
+
+            var resultado = num1 / num2;
+            result.innerText = "A divisão é: " + resultado;
+
+        }
+
+       
+        
+
+        
+            
+            
+           
+            
+           
+
+           
+
+                
+        
+                   
+
+                    
+           
+
+
+            
+
+            
+
+            
+        
+
+
+        
+      
+
+        
+
+        
+
+
+    </script>
+
+</body>
+
+</html>
